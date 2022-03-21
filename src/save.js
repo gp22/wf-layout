@@ -1,11 +1,13 @@
 import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
-export default function save() {
+export default function save ({ attributes }) {
+	const { split } = attributes;
+
 	return (
-		<div {...useBlockProps.save( {
-			className: 'wf-stack'
+		<div {...useBlockProps.save({
+			className: `wf-stack ${split ? `has-${split}-split` : ''}`
 		})}>
-			<InnerBlocks.Content />
+			<InnerBlocks.Content/>
 		</div>
 	);
 }
