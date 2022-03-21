@@ -1,0 +1,28 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wf-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.wf-stack > * {
+  margin-block: 0;
+}
+
+.wf-stack > * + * {
+  -webkit-margin-before: var(--space, 1.5rem);
+          margin-block-start: var(--space, 1.5rem);
+}
+
+.wf-stack:only-child {
+  block-size: 100%;
+}
+
+.wf-stack > :nth-child(2) {
+  -webkit-margin-after: auto;
+          margin-block-end: auto;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
