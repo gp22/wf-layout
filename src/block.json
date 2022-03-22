@@ -13,5 +13,15 @@
 	"textdomain": "wf-stack",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css"
+	"style": "file:./style-index.css",
+	"attributes": {
+		"size": {
+			"type": "string",
+			"default": "default"
+		},
+		"split": {
+			"type": "number",
+			"default": 0
+		}
+	}
 }
