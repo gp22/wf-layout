@@ -2,20 +2,20 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-}
 
-.wf-stack > * {
-	margin-block: 0;
-}
+	> * {
+		margin-block: 0;
+	}
 
-.wf-stack > * + * {
-	margin-block-start: var(--space, 1.5rem);
-}
+	> * + * {
+		margin-block-start: var(--space, 1.5rem);
+	}
 
-.wf-stack:only-child {
-	block-size: 100%;
-}
+	&:only-child {
+		block-size: 100%;
+	}
 
-.wf-stack > :nth-child(2) {
-	margin-block-end: auto;
+	//> :nth-child(2) {
+	//	margin-block-end: auto;
+	//}
 }
