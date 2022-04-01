@@ -1,8 +1,8 @@
 import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+import setClassName from './setClassName';
 
 export default function save ({ attributes }) {
-	const { size, split } = attributes;
-	const className = `wf-stack ${size} ${split ? `has-${split}-split` : ''}`;
+	const className = setClassName(attributes);
 
 	return (
 		<div {...useBlockProps.save({

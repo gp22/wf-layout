@@ -19,3 +19,11 @@
 	//	margin-block-end: auto;
 	//}
 }
+
+.wf-box {
+	padding: var(--space1, 1.5rem);
+
+	* {
+		color: inherit;
+	}
+}

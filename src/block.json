@@ -15,6 +15,10 @@
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",
 	"attributes": {
+		"layout": {
+			"type": "string",
+			"default": "stack"
+		},
 		"size": {
 			"type": "string",
 			"default": "default"
