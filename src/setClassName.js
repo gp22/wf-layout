@@ -12,6 +12,8 @@ const setClassName = (attributes) => {
 			return `wf-cluster`;
 		case layouts.stack:
 			return `wf-stack ${size} ${split ? `has-${split}-split` : ''}`;
+		case layouts.switcher:
+			return `wf-switcher`;
 		default:
 			return '';
 	}

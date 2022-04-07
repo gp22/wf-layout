@@ -34,6 +34,11 @@ export default function Edit ({ attributes, setAttributes }) {
 			icon: '',
 			onClick: () => setAttributes({ layout: layouts.stack }),
 		},
+		{
+			title: __('Switcher', namespace),
+			icon: '',
+			onClick: () => setAttributes({ layout: layouts.switcher }),
+		},
 	];
 
 	return (
