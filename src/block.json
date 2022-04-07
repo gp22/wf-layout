@@ -1,16 +1,16 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "wazframe/wf-stack",
+	"name": "wazframe/wf-layout",
 	"version": "0.1.0",
-	"title": "Stack",
+	"title": "Layout",
 	"category": "design",
 	"icon": "smiley",
-	"description": "Stack elements vertically.",
+	"description": "Every Layout components.",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "wf-stack",
+	"textdomain": "wf-layout",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

@@ -5,6 +5,7 @@ import {
 	__experimentalRadioGroup as RadioGroup, PanelBody, RangeControl, ToolbarDropdownMenu, ToolbarGroup
 } from '@wordpress/components';
 import layouts from './layouts';
+import namespace from './namespace';
 import setClassName from './setClassName';
 import './editor.scss';
 
@@ -14,13 +15,23 @@ export default function Edit ({ attributes, setAttributes }) {
 
 	const dropdownControls = [
 		{
-			title: __('Box', 'wf-stack'),
-			icon: 'arrowUp',
+			title: __('Box', namespace),
+			icon: '',
 			onClick: () => setAttributes({ layout: layouts.box }),
 		},
 		{
-			title: __('Stack', 'wf-stack'),
-			icon: 'arrowDown',
+			title: __('Center', namespace),
+			icon: '',
+			onClick: () => setAttributes({ layout: layouts.center }),
+		},
+		{
+			title: __('Cluster', namespace),
+			icon: '',
+			onClick: () => setAttributes({ layout: layouts.cluster }),
+		},
+		{
+			title: __('Stack', namespace),
+			icon: '',
 			onClick: () => setAttributes({ layout: layouts.stack }),
 		},
 	];
@@ -33,13 +44,13 @@ export default function Edit ({ attributes, setAttributes }) {
 				<ToolbarGroup>
 					<ToolbarDropdownMenu
 						icon="arrow-down-alt2"
-						label={__('Layouts', 'wf-stack')}
+						label={__('Layouts', namespace)}
 						controls={dropdownControls}
 					/>
 					{layout === layouts.stack &&
 						<RadioGroup
 							id="stack-size-radiogroup"
-							label={__('Stack size', 'wf-stack')}
+							label={__('Stack size', namespace)}
 							checked={size}
 							onChange={(value) => setAttributes({ size: value })}
 						>
@@ -50,11 +61,12 @@ export default function Edit ({ attributes, setAttributes }) {
 					}
 				</ToolbarGroup>
 			</BlockControls>
+
 			<InspectorControls>
 				<PanelBody>
 					{layout === layouts.stack &&
 						<RangeControl
-							label={__('Element to split stack vertically', 'wf-stack')}
+							label={__('Element to split stack vertically', namespace)}
 							min={0}
 							max={10}
 							onChange={(value) => setAttributes({ split: value })}

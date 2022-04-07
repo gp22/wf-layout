@@ -1,3 +1,25 @@
+.wf-box {
+	padding: var(--space, 1.5rem);
+
+	* {
+		color: inherit;
+	}
+}
+
+.wf-center {
+	box-sizing: content-box;
+	margin-inline: auto;
+	max-inline-size: 60ch;
+	padding-inline-end: var(--space, 1.5rem);
+	padding-inline-start: var(--space, 1.5rem);
+}
+
+.wf-cluster {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space, 1.5rem);
+}
+
 .wf-stack {
 	display: flex;
 	flex-direction: column;
@@ -18,12 +40,4 @@
 	//> :nth-child(2) {
 	//	margin-block-end: auto;
 	//}
-}
-
-.wf-box {
-	padding: var(--space1, 1.5rem);
-
-	* {
-		color: inherit;
-	}
 }
