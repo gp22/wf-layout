@@ -1,4 +1,4 @@
-.wf-box {
+.box {
 	padding: var(--space, 1.5rem);
 
 	* {
@@ -6,7 +6,7 @@
 	}
 }
 
-.wf-center {
+.center {
 	box-sizing: content-box;
 	margin-inline: auto;
 	max-inline-size: 60ch;
@@ -14,13 +14,13 @@
 	padding-inline-start: var(--space, 1.5rem);
 }
 
-.wf-cluster {
+.cluster {
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--space, 1.5rem);
 }
 
-.wf-stack {
+.stack {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
@@ -42,7 +42,7 @@
 	//}
 }
 
-.wf-switcher {
+.switcher {
 	display: flex;
 	flex-wrap: wrap;
 	gap: var(--space, 1.5rem);

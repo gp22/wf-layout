@@ -5,15 +5,15 @@ const setClassName = (attributes) => {
 
 	switch (layout) {
 		case layouts.box:
-			return `wf-box`;
+			return layouts.box;
 		case layouts.center:
-			return `wf-center`;
+			return layouts.center;
 		case layouts.cluster:
-			return `wf-cluster`;
+			return layouts.cluster;
 		case layouts.stack:
-			return `wf-stack ${size} ${split ? `has-${split}-split` : ''}`;
+			return `${layouts.stack} ${size} ${split ? `has-${split}-split` : ''}`;
 		case layouts.switcher:
-			return `wf-switcher`;
+			return layouts.switcher;
 		default:
 			return '';
 	}
