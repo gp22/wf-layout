@@ -12,6 +12,8 @@ const setClassName = (attributes) => {
 			return layouts.cluster;
 		case layouts.cover:
 			return layouts.cover;
+		case layouts.frame:
+			return layouts.frame;
 		case layouts.grid:
 			return layouts.grid;
 		case layouts.stack:

@@ -3,6 +3,7 @@ const layouts = {
 	center: 'center',
 	cluster: 'cluster',
 	cover: 'cover',
+	frame: 'frame',
 	grid: 'grid',
 	stack: 'stack',
 	switcher: 'switcher',
