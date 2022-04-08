@@ -10,6 +10,8 @@ const setClassName = (attributes) => {
 			return layouts.center;
 		case layouts.cluster:
 			return layouts.cluster;
+		case layouts.cover:
+			return layouts.cover;
 		case layouts.stack:
 			return `${layouts.stack} ${size} ${split ? `has-${split}-split` : ''}`;
 		case layouts.switcher:
