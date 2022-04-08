@@ -12,6 +12,8 @@ const setClassName = (attributes) => {
 			return layouts.cluster;
 		case layouts.cover:
 			return layouts.cover;
+		case layouts.grid:
+			return layouts.grid;
 		case layouts.stack:
 			return `${layouts.stack} ${size} ${split ? `has-${split}-split` : ''}`;
 		case layouts.switcher:

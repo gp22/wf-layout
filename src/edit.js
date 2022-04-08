@@ -35,6 +35,11 @@ export default function Edit ({ attributes, setAttributes }) {
 			onClick: () => setAttributes({ layout: layouts.cover }),
 		},
 		{
+			title: __('Grid', namespace),
+			icon: '',
+			onClick: () => setAttributes({ layout: layouts.grid }),
+		},
+		{
 			title: __('Stack', namespace),
 			icon: '',
 			onClick: () => setAttributes({ layout: layouts.stack }),
